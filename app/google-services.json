@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "372045874590",
+    "firebase_url": "https://acadvol-e81c8.firebaseio.com",
+    "project_id": "acadvol-e81c8",
+    "storage_bucket": "acadvol-e81c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372045874590:android:f4d8d2f09182a445",
+        "android_client_info": {
+          "package_name": "com.example.jonathas.acadvol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372045874590-kkfn3l2poukg1qmdbp4hj81rknjv8e9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxx1w6TgA3sLON_IS6OEOovreI6zcnb0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
