@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Séries, repetições e carga:"
+        android:text="Volume Médio deste grupo muscular:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spGrupoMusc" />
 
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Série:"
+        android:text="Maior Volume registrado: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -96,8 +96,9 @@
         android:id="@+id/btSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="28dp"
+        android:onClick="botoesMaisEMenos"
         android:text="Salvar série"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVolumeSerie" />
@@ -106,19 +107,19 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="140dp"
         android:layout_marginTop="8dp"
         android:text="Volume da Série:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga" />
+        app:layout_constraintTop_toBottomOf="@+id/edCarga" />
 
     <TextView
         android:id="@+id/tvVolumeSerie"
         android:layout_width="wrap_content"
         android:layout_height="15dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="sfsdfsdf"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="20dp"
+        android:text="---"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -129,7 +130,72 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
-        android:text="-"
+        android:text="- 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btMenosCarga20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="botoesMaisEMenos"
+        android:text="- 20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga15"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <Button
+        android:id="@+id/btMenosCarga15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="- 15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga10"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Button
+        android:id="@+id/btMenosCarga10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="- 10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga5"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <Button
+        android:id="@+id/btMenosCarga5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="- 5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga2"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <Button
+        android:id="@+id/btMenosCarga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="- 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga1"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/btMenosCarga1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="- 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -145,13 +211,68 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btMaisCarga"
+        android:id="@+id/btMaisCarga5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="48dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="+ 5"
+        app:layout_constraintStart_toEndOf="@+id/edCarga"
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga2"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <Button
+        android:id="@+id/btMaisCarga20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
-        android:text="+"
+        android:text="+20"
+        app:layout_constraintStart_toEndOf="@+id/edCarga"
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga15" />
+
+    <Button
+        android:id="@+id/btMaisCarga15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="+15"
+        app:layout_constraintStart_toEndOf="@+id/edCarga"
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga10"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <Button
+        android:id="@+id/btMaisCarga10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/edCarga"
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga5"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <Button
+        android:id="@+id/btMaisCarga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="+2"
+        app:layout_constraintStart_toEndOf="@+id/edCarga"
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga1"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <Button
+        android:id="@+id/btMaisCarga1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:onClick="botoesMaisEMenos"
+        android:text="+1"
         app:layout_constraintStart_toEndOf="@+id/edCarga"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -165,5 +286,55 @@
         android:text="+"
         app:layout_constraintStart_toEndOf="@+id/edNumRep"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btRelatorios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="76dp"
+        android:text="Relatórios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
+
+    <TextView
+        android:id="@+id/tvMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="---"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/spGrupoMusc" />
+
+    <TextView
+        android:id="@+id/tvMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="---"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedia" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Volume hoje:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga20" />
+
+    <TextView
+        android:id="@+id/tvVolumeHoje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="---"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/btRelatorios" />
 
 </android.support.constraint.ConstraintLayout>
