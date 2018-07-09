@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.UUID;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     Button btSalvar, btMaisrep, btMenosRep, btMaisCarga, btMenosCarga;
     EditText edRep, edcarga;
@@ -60,10 +60,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void popularSpinner() {
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
-                android.R.layout.simple_spinner_item,gpMusc);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.gruposMusc,
+                android.R.layout.simple_spinner_item);
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spGpMuscular.setAdapter(adapter);
         spGpMuscular.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -239,7 +238,7 @@ public class MainActivity extends AppCompatActivity {
                 databaseReference.child("Series").child(serie.getGpMusc()).child(serie.getId()).setValue(serie);
 
 
-                Toast.makeText(this, "Série Salva", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Série de " + serie.getGpMusc() + " salva", Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent2);
                 finish();

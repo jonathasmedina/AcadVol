@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">AcadVol</string>
+    <string-array name="gruposMusc">
+            <item>  1-1 Antebraço: Flexores do antebraço</item>
+            <item>  1-2 Antebraço: Extensores do antebraço</item>
+
+            <item>  2-1 Braço: Bíceps</item>
+            <item>  2-2 Braço: Tríceps</item>
+
+            <item>  3-1 Cintura: Reto abdominal</item>
+            <item>  3-2 Cintura: Oblíquo abdominal</item>
+
+            <item>  4-1 Costas: Latíssimo Dorsal</item>
+            <item>  4-2 Costas: Trapézio medial/romboide</item>
+
+            <item>  5-1 Coxa: Quadríceps</item>
+            <item>  5-2 Coxa: Isquiotibiais</item>
+
+            <item>  6-1 Ombros: Deltoide anterior</item>
+            <item>  6-2 Ombros: Deltoide lateral</item>
+            <item>  6-3 Ombros: Deltoide posterior</item>
+            <item>  6-4 Ombros: Trapézio superior</item>
+
+            <item>  7-1 Peito: Peitoral Maior</item>
+
+            <item>  8-1 Perna: Sóleo</item>
+            <item>  8-2 Perna: Gastrocnêmio</item>
+
+            <item>  9-1 Quadril: Glúteo máximo</item>
+            <item>  9-2 Quadril: Glúteo médio/mínimo</item>
+    </string-array>
+
 </resources>
