@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btSalvar, btMaisrep, btMenosRep, btMaisCarga, btMenosCarga;
     EditText edRep, edcarga;
-    TextView tvTotalSerie, tvMedia, tvMax, tvVolumeHoje;;
+    TextView tvTotalSerie, tvMedia, tvMax, tvVolumeHoje, tvQtdSerie;
 
     Spinner spGpMuscular;
     String[] gpMusc = new String[] {"Abdome","Bíceps","Costas","Ombros", "Peito","Pernas", "Tríceps"};
@@ -85,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void eventoDataBase(final String gpMuscSelec) {
 
+        tvVolumeHoje.setText("");
+        tvMedia.setText("");
+        tvMax.setText("");
+        tvTotalSerie.setText("");
+        tvQtdSerie.setText("");
+
         Query query = databaseReference.child("Series").child(gpMuscSelec);
 
         Calendar calendar = Calendar.getInstance();
@@ -107,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     volMedio = totalExerc / serieArrayList.size();
                     tvMedia.setText(String.valueOf(volMedio));
                 }
+                tvQtdSerie.setText(String.valueOf(serieArrayList.size()));
 
             }
 
@@ -127,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (totalExerc > 0.0) {
-                    tvVolumeHoje.setText(String.valueOf(volMedio));
+                    tvVolumeHoje.setText(String.valueOf(totalExerc));
                 }
             }
 
@@ -158,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
         tvMedia = findViewById(R.id.tvMedia);
         tvMax = findViewById(R.id.tvMax);
         tvVolumeHoje = findViewById(R.id.tvVolumeHoje);
+        tvQtdSerie = findViewById(R.id.tvQtdSerie);
     }
 
     public void botoesMaisEMenos(View view) {

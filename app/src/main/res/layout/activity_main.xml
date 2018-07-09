@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="Grupo muscular:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
@@ -44,7 +43,6 @@
         android:id="@+id/edNumRep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="10"
         app:layout_constraintStart_toEndOf="@+id/btMenosRep"
@@ -76,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Carga>"
+        android:text="Carga:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btMenosRep" />
 
@@ -203,7 +201,7 @@
         android:id="@+id/btMenosRep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
         android:text="-"
@@ -280,22 +278,12 @@
         android:id="@+id/btMaisRep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
         android:text="+"
         app:layout_constraintStart_toEndOf="@+id/edNumRep"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/btRelatorios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="76dp"
-        android:text="Relatórios"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
 
     <TextView
         android:id="@+id/tvMedia"
@@ -321,11 +309,11 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Volume hoje:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btMenosCarga20" />
+        app:layout_constraintStart_toEndOf="@+id/tvMax"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedia" />
 
     <TextView
         android:id="@+id/tvVolumeHoje"
@@ -335,6 +323,26 @@
         android:layout_marginTop="8dp"
         android:text="---"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/btRelatorios" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMedia" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Série de num"
+        app:layout_constraintStart_toEndOf="@+id/btMenosCarga15"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
+
+    <TextView
+        android:id="@+id/tvQtdSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:text="---"
+        app:layout_constraintStart_toEndOf="@+id/btMenosCarga20"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
 </android.support.constraint.ConstraintLayout>
