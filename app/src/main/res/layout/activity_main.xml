@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Número de Repetições:"
+        android:text="Número de Repetições na série:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Carga:"
+        android:text="Carga utilizada na série:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btMenosRep" />
 
@@ -84,7 +84,7 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         android:text="10"
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
         android:text="Salvar série"
         app:layout_constraintEnd_toStartOf="@+id/btMaisCarga10"
@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="52dp"
         android:text="Volume desta Série:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edCarga" />
@@ -120,7 +120,7 @@
         android:layout_height="15dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="---"
         app:layout_constraintEnd_toStartOf="@+id/btMaisCarga5"
         app:layout_constraintStart_toEndOf="@+id/btMenosCarga5"
@@ -337,7 +337,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="26dp"
         android:text="Série de número:"
         app:layout_constraintEnd_toStartOf="@+id/btMaisCarga15"
         app:layout_constraintStart_toEndOf="@+id/btMenosCarga15"
@@ -354,5 +354,24 @@
         app:layout_constraintEnd_toStartOf="@+id/btMaisCarga20"
         app:layout_constraintStart_toEndOf="@+id/btMenosCarga20"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="kg"
+        app:layout_constraintStart_toEndOf="@+id/edCarga"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="kg."
+        app:layout_constraintStart_toEndOf="@+id/tvMedia"
+        app:layout_constraintTop_toBottomOf="@+id/spGrupoMusc" />
 
 </android.support.constraint.ConstraintLayout>

@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity{
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
+    Boolean chamei = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,12 +148,10 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void inicializarFirebase() {
-        FirebaseApp.initializeApp(MainActivity.this);
-        firebaseDatabase = FirebaseDatabase.getInstance();
-       // firebaseDatabase.setPersistenceEnabled(true);
-        databaseReference = firebaseDatabase.getReference();
+            FirebaseApp.initializeApp(MainActivity.this);
+            FirebaseDatabase firebaseDatabase = Utils.getDatabase();
+            databaseReference = firebaseDatabase.getReference();
     }
-
 
     private void finds() {
         btSalvar = findViewById(R.id.btSalvar);
