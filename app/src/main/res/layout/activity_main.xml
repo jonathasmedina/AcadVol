@@ -374,4 +374,24 @@
         app:layout_constraintStart_toEndOf="@+id/tvMedia"
         app:layout_constraintTop_toBottomOf="@+id/spGrupoMusc" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="kg."
+        app:layout_constraintStart_toEndOf="@+id/tvVolumeSerie"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="kg."
+        app:layout_constraintStart_toEndOf="@+id/tvVolumeHoje"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
 </android.support.constraint.ConstraintLayout>
