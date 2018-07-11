@@ -6,4 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total do dia:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira ingestão de proteína:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="108dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="381dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -27,7 +27,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity{
 
-    Button btSalvar, btMaisrep, btMenosRep, btMaisCarga, btMenosCarga;
+    Button btSalvar, btMaisrep, btMenosRep, btMaisCarga, btMenosCarga, btIngestProt;
     EditText edRep, edcarga;
     TextView tvTotalSerie, tvMedia, tvMax, tvVolumeHoje, tvQtdSerie;
 
@@ -165,6 +165,7 @@ public class MainActivity extends AppCompatActivity{
         tvMax = findViewById(R.id.tvMax);
         tvVolumeHoje = findViewById(R.id.tvVolumeHoje);
         tvQtdSerie = findViewById(R.id.tvQtdSerie);
+        btIngestProt = findViewById(R.id.btIngestProt);
     }
 
     public void botoesMaisEMenos(View view) {
@@ -212,10 +213,10 @@ public class MainActivity extends AppCompatActivity{
             case R.id.btMenosRep:
                 edRep.setText(String.valueOf(Integer.parseInt(edRep.getText().toString())-1));
                 break;
-//            case R.id.btRelatorios:
-//                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-//                startActivity(intent);
-//                finish();
+            case R.id.btIngestProt:
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+                finish();
             case R.id.btSalvar:
                // tvTotalSerie.setText(String.valueOf());
 
@@ -252,7 +253,6 @@ public class MainActivity extends AppCompatActivity{
 }
 
 
-//TODO considerar mudar spinner por radio para diminuir clicques
 //TODO salvar dias e dias da semana e extrair relatórios como carga da semana, etc;
-//TODO fazer o firebase
+//TODO tela de ingestão proteica
 

@@ -43,8 +43,7 @@
         android:id="@+id/edNumRep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="10"
         app:layout_constraintStart_toEndOf="@+id/btMenosRep"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -117,7 +116,7 @@
     <TextView
         android:id="@+id/tvVolumeSerie"
         android:layout_width="wrap_content"
-        android:layout_height="15dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
@@ -219,18 +218,18 @@
         android:id="@+id/btMaisCarga5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
         android:onClick="botoesMaisEMenos"
         android:text="+ 5"
         app:layout_constraintStart_toEndOf="@+id/edCarga"
-        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga2"
-        tools:layout_editor_absoluteY="337dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga2" />
 
     <Button
         android:id="@+id/btMaisCarga20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="28dp"
         android:onClick="botoesMaisEMenos"
         android:text="+20"
         app:layout_constraintStart_toEndOf="@+id/edCarga"
@@ -240,40 +239,37 @@
         android:id="@+id/btMaisCarga15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="28dp"
         android:onClick="botoesMaisEMenos"
         android:text="+15"
         app:layout_constraintStart_toEndOf="@+id/edCarga"
-        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga10"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga10" />
 
     <Button
         android:id="@+id/btMaisCarga10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="28dp"
         android:onClick="botoesMaisEMenos"
         android:text="+10"
         app:layout_constraintStart_toEndOf="@+id/edCarga"
-        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga5"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga5" />
 
     <Button
         android:id="@+id/btMaisCarga2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="28dp"
         android:onClick="botoesMaisEMenos"
         android:text="+2"
         app:layout_constraintStart_toEndOf="@+id/edCarga"
-        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga1"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btMaisCarga1" />
 
     <Button
         android:id="@+id/btMaisCarga1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
         android:text="+1"
@@ -284,7 +280,6 @@
         android:id="@+id/btMaisRep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:onClick="botoesMaisEMenos"
         android:text="+"
@@ -365,16 +360,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="kg."
-        app:layout_constraintStart_toEndOf="@+id/tvMedia"
-        app:layout_constraintTop_toBottomOf="@+id/spGrupoMusc" />
-
-    <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -389,9 +374,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="kg."
         app:layout_constraintStart_toEndOf="@+id/tvVolumeHoje"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+        android:id="@+id/btIngestProt"
+        android:layout_width="56dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="P"
+        android:onClick="botoesMaisEMenos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </android.support.constraint.ConstraintLayout>
